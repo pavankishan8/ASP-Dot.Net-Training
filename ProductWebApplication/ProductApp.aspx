@@ -1,18 +1,18 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Mainsheet.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="ProductWebApplication.WebForm1" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Mainsheet.Master" AutoEventWireup="true" CodeBehind="ProductApp.aspx.cs" Inherits="ProductWebApplication.ProductApp" %>
 
 <asp:Content ContentPlaceHolderID="mainContent" runat="server">
 
+    
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
 
-    <div>
         <h1 class="auto-style1"><span class="newStyle1">PRODUCT APPLICATION</span></h1>
-    </div>
+    
 
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <asp:ListBox ID="lstProducts" runat="server" Height="330px" Width="171px" OnSelectedIndexChanged="lstProducts_SelectedIndexChanged" AutoPostBack="True"></asp:ListBox>
+                    <asp:ListBox ID="lstProducts" runat="server" Height="386px" Width="213px"  AutoPostBack="True" OnSelectedIndexChanged="lstProducts_SelectedIndexChanged"></asp:ListBox>
                 </div>
 
                 <div class="col-md-7">
@@ -20,7 +20,9 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <asp:Image ID="imgPic" Height="192px" runat="server" Width="175px" />
+                            <asp:Image ID="imgPic" Height="218px" runat="server" Width="183px" />
+                            <asp:FileUpload runat="server" ID="FileUpload1" />
+
                         </div>
 
                         <div class="col-md-4">
@@ -49,12 +51,7 @@
                             <button onserverclick="btnAdd_Click" runat="server" class="btn btn-primary m-2">
                                 <i class="fa fa-plus-circle"></i>
                             </button>
-                            
-                            <asp:FileUpload ID="FileUpload1" runat="server" />
-                            <asp:Button ID="Button1" runat="server"
-                                Text="Upload" OnClick="Button1_Click" />
-                            
-                            <asp:Image ID="Image1" runat="server" />
+     
 
                         </div>
 

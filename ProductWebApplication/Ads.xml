@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Advertisement-File-1.2">
+  <Ad xmlns="">
+    <ImageUrl>./Images/w3schools.png</ImageUrl>
+    <AlternateText>w3schools</AlternateText>
+    <NavigateUrl>https://www.w3schools.com/</NavigateUrl>
+    <Impressions>50</Impressions>
+  </Ad>
+  <Ad xmlns="">
+    <ImageUrl>./Images/Starmark.png</ImageUrl>
+    <AlternateText>Starmark</AlternateText>
+    <NavigateUrl>https://www.starmarksv.com/</NavigateUrl>
+    <Impressions>50</Impressions>
+  </Ad>
+</Advertisements>

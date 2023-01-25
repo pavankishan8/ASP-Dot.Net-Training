@@ -91,7 +91,7 @@ namespace ProductWebApplication
                 //get the size in bytes that  
                 imgSize = FileUpload1.PostedFile.ContentLength;
                 // 10240 KB means 10MB, You can change the value based on your requirement  
-                if (imgSize > 90240)
+                if (imgSize > 102400)
                 {
                     Page.ClientScript.RegisterClientScriptBlock(typeof(Page),
                     "Alert", "alert('File is too big.')", true);

@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mainsheet.master.cs" Inherits="ProductWebApplication.Mainsheet" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-3.6.3.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .newStyle1 {
+            font-family: "Comic Sans MS";
+        }
+        .newStyle2 {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <h1>Pavan Kishan</h1>
+                <p><span class="newStyle1">Hi! I'm Pavan Kishan. On my channel, you will find many kind of videos. I love traveling and sharing my experiences with all of you.</span></p>
+                <hr />
+                <asp:Menu runat="server" Orientation="Horizontal" CssClass="newStyle2">
+                   <Items>
+                       <asp:MenuItem Text="Home" NavigateUrl="~/HomePage.aspx" />
+                       <asp:MenuItem Text="List Form" NavigateUrl="~/WebForm1.aspx"/>
+                       <asp:MenuItem Text="Database App" NavigateUrl="~/ProductApp.aspx" />
+                       <asp:MenuItem Text="Validations" NavigateUrl="~/Validations.aspx"/>
+                       <asp:MenuItem Text="State Management">
+                           <asp:MenuItem Text="MainPage" />
+                           <asp:MenuItem Text="Recipiant Page" />
+                           <asp:MenuItem Text="Shopping Cart" />
+                       </asp:MenuItem>
+                       <asp:MenuItem Text="Caching" />
+                       <asp:MenuItem Text="Login Controls" />
+                   </Items>
+               </asp:Menu> 
+
+                <hr />
+            </div>
+
+            <div class="row">
+                <div class="col-8">
+                    <asp:ContentPlaceHolder runat="server" ID="mainContent">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-3">
+                    <div class="container-fluid">
+                        <div class="row" style="margin:20px">
+                            <asp:AdRotator Width="100%" Height="150px" AdvertisementFile="~/Ads.xml" runat="server" />
+                        </div>
+                        <div class="row">
+                            <asp:Calendar runat="server" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p style="text-align: center">
+                    <i>Copyrights Pavan Kishan-<asp:Label Text="" ID="lblYear" runat="server" /></i>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
