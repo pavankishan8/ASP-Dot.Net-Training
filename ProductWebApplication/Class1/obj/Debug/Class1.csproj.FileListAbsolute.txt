@@ -1,0 +1,11 @@
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\Class1.dll.config
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\Class1.dll
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\Class1.pdb
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\EntityFramework.dll
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\EntityFramework.SqlServer.dll
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\EntityFramework.xml
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\bin\Debug\EntityFramework.SqlServer.xml
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\obj\Debug\Class1.csproj.CoreCompileInputs.cache
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\obj\Debug\Class1.csproj.CopyComplete
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\obj\Debug\Class1.dll
+D:\Starmark-Pavan R\ASP DotNet\ProductWebApplication\Class1\obj\Debug\Class1.pdb
