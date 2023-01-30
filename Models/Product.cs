@@ -95,6 +95,70 @@ namespace ProductWebApplication.Models
                 Price = 45,
                 ProductName = "Blue Tea"
             });
+
+            _repo.Add(new Product
+            {
+                ProductId = 10,
+                Image = @".\Images\Bubble Tea.png",
+                Price = 145,
+                ProductName = "Bubble Tea"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 11,
+                Image = @".\Images\Iced Coffee.jpg",
+                Price = 169,
+                ProductName = "Iced Coffee"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 12,
+                Image = @".\Images\Zavarka.jpg",
+                Price = 49,
+                ProductName = "Zavarka"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 13,
+                Image = @".\Images\Bajji.jpg",
+                Price = 49,
+                ProductName = "Bajji"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 14,
+                Image = @".\Images\Pav Bhaji.jpg",
+                Price = 120,
+                ProductName = "Pav Bhaji"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 15,
+                Image = @".\Images\Chole Bhature.jpg",
+                Price = 110,
+                ProductName = "Chole Bhature"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 16,
+                Image = @".\Images\Nachos.jpg",
+                Price = 160,
+                ProductName = "Nachos"
+            });
+
+            _repo.Add(new Product
+            {
+                ProductId = 17,
+                Image = @".\Images\Kulfi.jpg",
+                Price = 80,
+                ProductName = "Kulfi"
+            });
         }
 
         public static void UpdateProduct(Product product)
