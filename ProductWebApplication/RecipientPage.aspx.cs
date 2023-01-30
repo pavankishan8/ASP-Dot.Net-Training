@@ -11,7 +11,7 @@ namespace ProductWebApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //querystringExample();
+            querystringExample();
             cookiesExample();
         }
 

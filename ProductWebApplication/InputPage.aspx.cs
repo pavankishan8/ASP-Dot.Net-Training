@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -26,7 +27,7 @@ namespace ProductWebApplication
             cookie.Values.Add("email", txtEmail.Text);
             cookie.Values.Add("phone", txtContact.Text);
             Response.Cookies.Add(cookie);
-            Response.Redirect("RecipiantPage.aspx");
+            Response.Redirect("RecipientPage.aspx");
             **********************ViewState**************************/
             ViewState["Hits"] = count;
             Response.Write("The Hits: " + ViewState["Hits"].ToString());

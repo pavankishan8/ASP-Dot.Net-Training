@@ -15,23 +15,30 @@
         .newStyle2 {
             font-family: "Times New Roman", Times, serif;
         }
+        body {
+            background-image:url('./Images/background.jpg');
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+        }
     </style>
 
 </head>
 <body>
+   
     <form id="form1" runat="server">
         <div class="container">
             <div class="row">
                 <h1>Pavan Kishan</h1>
                 <p><span class="newStyle1">Hi! I'm Pavan Kishan. On my channel, you will find many kind of videos. I love traveling and sharing my experiences with all of you.</span></p>
                 <hr />
-                <asp:Menu runat="server" Orientation="Horizontal" CssClass="newStyle2" BackColor="#B5C7DE" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" StaticSubMenuIndent="10px">
+                <asp:Menu runat="server" Orientation="Horizontal" CssClass="newStyle2" BackColor="#0066FF" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="White" StaticSubMenuIndent="10px">
                     <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
-                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px" />
                     <DynamicMenuStyle BackColor="#B5C7DE" />
                     <DynamicSelectedStyle BackColor="#507CD1" />
                    <Items>
                        <asp:MenuItem Text="Home" NavigateUrl="~/HomePage.aspx" />
+                       <asp:MenuItem Text="Youtube" NavigateUrl="~/Youtube.aspx"/>
                        <asp:MenuItem Text="List Form" NavigateUrl="~/WebForm1.aspx"/>
                        <asp:MenuItem Text="Database App" NavigateUrl="~/ProductApp.aspx" />
                        <asp:MenuItem Text="Validations" NavigateUrl="~/Validations.aspx"/>
@@ -40,9 +47,10 @@
                            <asp:MenuItem Text="Recipiant Page" NavigateUrl="~/RecipientPage.aspx"/>
                            <asp:MenuItem Text="Shopping Cart" NavigateUrl="~/Shopping Cart.aspx"/>
                        </asp:MenuItem>
-                       <asp:MenuItem Text="Youtube" NavigateUrl="~/Youtube.aspx"/>
                        <asp:MenuItem Text="Caching" />
                        <asp:MenuItem Text="Login Controls" />
+                       <asp:MenuItem Text="About Us" />
+                       <asp:MenuItem Text="Location" />
                        
                    </Items>
                            
@@ -74,18 +82,18 @@
                 <div class="col-3">
                     <div class="container-fluid">
                         <div class="row" style="margin:20px">
-                            <asp:AdRotator Width="100%" Height="150px" AdvertisementFile="~/Ads.xml" runat="server" />
+                            <asp:AdRotator Width="110%" Height="150px" AdvertisementFile="~/Ads.xml" runat="server" />
                         </div>
                         <div class="row">
                             <asp:Calendar runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px" >
-                                <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
-                                <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
-                                <OtherMonthDayStyle ForeColor="#999999" />
-                                <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
-                                <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
-                                <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
-                                <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
-                                <WeekendDayStyle BackColor="#CCCCFF" />
+                                <DayHeaderStyle BackColor="#FF33CC" ForeColor="Black" Height="1px" />
+                                <NextPrevStyle Font-Size="8pt" ForeColor="#FF6699" />
+                                <OtherMonthDayStyle ForeColor="Black" />
+                                <SelectedDayStyle BackColor="#FF99CC" Font-Bold="True" ForeColor="#FF9999" />
+                                <SelectorStyle BackColor="#FFCCCC" ForeColor="#FF9999" />
+                                <TitleStyle BackColor="#0066FF" BorderColor="Black" BorderWidth="1px" Font-Bold="True" Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+                                <TodayDayStyle BackColor="#3366FF" ForeColor="White" />
+                                <WeekendDayStyle BackColor="#FF66CC" />
                             </asp:Calendar>
                         </div>
                     </div>

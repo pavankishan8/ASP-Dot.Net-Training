@@ -90,6 +90,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Images\Bajji.jpg" />
     <Content Include="Images\Blue Tea.jpg" />
     <Content Include="Images\Bubble Tea.png" />

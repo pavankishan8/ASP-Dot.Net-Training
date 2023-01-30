@@ -33,17 +33,17 @@
                  <asp:regularexpressionvalidator runat="server" errormessage="Email is not in a proper format" ForeColor="red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail"></asp:regularexpressionvalidator>
             </p>
             <p>
-                Enter the Password:
+             Enter the Password:
                 <asp:textbox runat="server" ID="txtPwd" TextMode="Password" />
                  <asp:requiredfieldvalidator runat="server" errormessage="Password must be entered" ForeColor="#FF3300" ControlToValidate="txtPwd"></asp:requiredfieldvalidator>
             </p>
             <p>
-                Retype the Password:
+             Retype the Password:
                 <asp:textbox runat="server" ID="txtRetype" TextMode="Password" />
                 <asp:comparevalidator runat="server" errormessage="Password Mismatch" ControlToCompare="txtPwd" ControlToValidate="txtRetype" ForeColor="#FF3300"></asp:comparevalidator>
             </p>
             <p>
-                Enter the years of Experience:
+             Enter the years of Experience:
                  <asp:textbox runat="server" ID="txtExperience" TextMode="Number" />
                 <asp:rangevalidator errormessage="Experience should be b/w 3 to 10 years" controltovalidate="txtExperience" runat="server" MaximumValue="10" MinimumValue="3" Type="Integer" />
             </p>

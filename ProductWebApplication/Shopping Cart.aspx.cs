@@ -35,7 +35,7 @@ namespace ProductWebApplication
                 
 
                 var recentList = Session["recentItems"] as Queue<Product>;
-                if (recentList.Count == 5)
+                if (recentList.Count == 4)
                     recentList.Dequeue();
                 recentList.Enqueue(selectedProduct);
                 Session["recentItems"] = recentList;

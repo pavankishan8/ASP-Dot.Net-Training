@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <asp:ListBox ID="lstProducts" runat="server" Height="330px" Width="171px" OnSelectedIndexChanged="lstProducts_SelectedIndexChanged" AutoPostBack="True"></asp:ListBox>
+                    <asp:ListBox ID="lstProducts" runat="server" Height="330px" Width="171px" OnSelectedIndexChanged="lstProducts_SelectedIndexChanged" AutoPostBack="True" BackColor="#99CCFF" BorderColor="White" BorderStyle="Solid"></asp:ListBox>
                 </div>
 
                 <div class="col-md-7">
@@ -20,7 +20,7 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <asp:Image ID="imgPic" Height="192px" runat="server" Width="175px" />
+                            <asp:Image ID="imgPic" Height="164px" runat="server" Width="156px" BackColor="#99CCFF" BorderColor="White" BorderStyle="Solid" />
                         </div>
 
                         <div class="col-md-4">

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContent" runat="server">
      <style>
         .item{
-            border:2px dotted blue;
+            border:2px solid blue;
         }
     </style>
     
@@ -34,7 +34,7 @@
     </asp:Repeater>
             </div>
             <div class="col-md-4">
-                <h2>Details of the selected Product</h2>
+                <h2>Details of the Selected Product</h2>
                 <div>
                     <asp:TextBox ID="txtProductId" runat="server" Enabled="false" />
                 </div>
@@ -53,12 +53,12 @@
             </div>
         </div>
         <div class="row">
-            <asp:DataList ID="lstRecentList" runat="server" RepeatColumns="5">
+            <asp:DataList ID="lstRecentList" runat="server" CellPadding="30" RepeatColumns="4">
                 <ItemTemplate>
                     <div class="row item">
-                        <div class="col-md-8">
-                            <h2><%#Eval("ProductName")%></h2>
-                            <asp:Image ImageUrl=<%#Eval("Image")%> runat="server" height="200" Width="200" padding="25px" />
+                        <div class="col-md-7">
+                            <h5><%#Eval("ProductName")%></h5>
+                            <asp:Image ImageUrl=<%#Eval("Image")%> runat="server" height="200" Width="200" />
                             <p>Price: <%#Eval("Price") %></p>
                         </div>
                 </ItemTemplate>
