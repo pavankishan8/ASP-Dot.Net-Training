@@ -32,15 +32,26 @@
                        <asp:MenuItem Text="Database App" NavigateUrl="~/ProductApp.aspx" />
                        <asp:MenuItem Text="Validations" NavigateUrl="~/Validations.aspx"/>
                        <asp:MenuItem Text="State Management">
-                           <asp:MenuItem Text="MainPage" />
-                           <asp:MenuItem Text="Recipiant Page" />
+                           <asp:MenuItem Text="MainPage" NavigateUrl="~/InputPage.aspx"/>
+                           <asp:MenuItem Text="Recipiant Page" NavigateUrl="~/RecipientPage.aspx"/>
                            <asp:MenuItem Text="Shopping Cart" />
                        </asp:MenuItem>
                        <asp:MenuItem Text="Caching" />
                        <asp:MenuItem Text="Login Controls" />
+                       
                    </Items>
-               </asp:Menu> 
+                           
 
+                      
+               </asp:Menu> 
+               <%--<div>
+                                <asp:DropDownList CssClass="form-control" ID="dpQuantity" runat="server">
+                                    <asp:ListItem Selected="True">Black</asp:ListItem>
+                                    <asp:ListItem>Cool</asp:ListItem>
+                                    <asp:ListItem>Hot</asp:ListItem>
+                                </asp:DropDownList>
+
+                </div>--%>
                 <hr />
             </div>
 
