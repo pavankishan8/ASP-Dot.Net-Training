@@ -90,16 +90,28 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Bajji.jpg" />
     <Content Include="Images\Blue Tea.jpg" />
+    <Content Include="Images\Bubble Tea.png" />
+    <Content Include="Images\Chole Bhature.jpg" />
     <Content Include="Images\Coffee.jpg" />
     <Content Include="Images\ColdCoffee.jfif" />
+    <Content Include="Images\download.jfif" />
+    <Content Include="Images\Iced Coffee.jpg" />
     <Content Include="Images\images.jfif" />
+    <Content Include="Images\Kulfi.jpg" />
     <Content Include="Images\Lemon Tea.jpg" />
     <Content Include="Images\Maggie.jpg" />
     <Content Include="Images\Maghreb.jfif" />
     <Content Include="Images\Matcha Tea.jfif" />
+    <Content Include="Images\Nachos.jpg" />
+    <Content Include="Images\Pav Bhaji.jpg" />
+    <Content Include="Images\Pavan.jpg" />
     <Content Include="Images\Sandwich.jpg" />
+    <Content Include="Images\Starmark.png" />
     <Content Include="Images\Tea.jpg" />
+    <Content Include="Images\w3schools.png" />
+    <Content Include="Images\Zavarka.jpg" />
     <Content Include="InputPage.aspx" />
     <Content Include="ProductApp.aspx" />
     <Content Include="RecipientPage.aspx" />
@@ -111,11 +123,14 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="HomePage.aspx" />
     <Content Include="PageLifeCycle.aspx" />
+    <Content Include="Youtube.aspx" />
     <None Include="Scripts\jquery-3.6.3.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.3.js" />
     <Content Include="Scripts\jquery-3.6.3.min.js" />
     <Content Include="Scripts\jquery-3.6.3.slim.js" />
     <Content Include="Scripts\jquery-3.6.3.slim.min.js" />
+    <Content Include="Shopping Cart.aspx" />
+    <Content Include="StateManagement.aspx" />
     <Content Include="Validations.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -154,6 +169,20 @@
     <Compile Include="RecipientPage.aspx.designer.cs">
       <DependentUpon>RecipientPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Shopping Cart.aspx.cs">
+      <DependentUpon>Shopping Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shopping Cart.aspx.designer.cs">
+      <DependentUpon>Shopping Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StateManagement.aspx.cs">
+      <DependentUpon>StateManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StateManagement.aspx.designer.cs">
+      <DependentUpon>StateManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Validations.aspx.cs">
       <DependentUpon>Validations.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -181,6 +210,13 @@
     </Compile>
     <Compile Include="PageLifeCycle.aspx.designer.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Youtube.aspx.cs">
+      <DependentUpon>Youtube.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Youtube.aspx.designer.cs">
+      <DependentUpon>Youtube.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

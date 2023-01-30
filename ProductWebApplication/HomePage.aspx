@@ -6,6 +6,8 @@
             <p>
                 This is Pavan Kishan!
             </p>
+            
+            <img src=".\Images\Pavan.jpg" alt="My Image" width="720" height="360" />
         </div>
     </div>
 </asp:Content>

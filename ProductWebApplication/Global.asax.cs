@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProductWebApplication.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,13 @@ namespace ProductWebApplication
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            Application["products"] = ProductRepo.AllProducts;
+        }
+
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            Session["myCart"] = new List<Product>();
+            Session["recentItems"] = new Queue<Product>();
         }
     }
 }
