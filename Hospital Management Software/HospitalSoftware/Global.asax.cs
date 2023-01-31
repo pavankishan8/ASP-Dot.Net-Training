@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalSoftware.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,8 @@ namespace HospitalSoftware
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            Application["Doctors"] = new DoctorRepo().AllDoctors;
+            Application["Patients"] = new PatientRepo();
         }
     }
 }
