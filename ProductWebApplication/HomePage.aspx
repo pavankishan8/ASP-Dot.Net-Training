@@ -6,8 +6,9 @@
             <p>
                 This is Pavan Kishan!
             </p>
-            
-            <img src=".\Images\Pavan.jpg" alt="My Image" width="720" height="360" />
+            <div>
+            <img src=".\Images\Pavan.jpg" alt="My Image" width="550" height="360" style="Border:solid White; border-width:5px; padding:10px"/>
+                </div>
         </div>
     </div>
 </asp:Content>

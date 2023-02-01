@@ -12,80 +12,85 @@
         .newStyle1 {
             font-family: "Comic Sans MS";
         }
+
         .newStyle2 {
             font-family: "Times New Roman", Times, serif;
         }
+
         body {
-            background-image:url('./Images/background.jpg');
-            background-repeat:no-repeat;
-            background-attachment:fixed;
+            background-image: url('./Images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
 
 </head>
 <body>
-   
+
     <form id="form1" runat="server">
         <div class="container">
             <div class="row">
                 <h1>Pavan Kishan</h1>
                 <p><span class="newStyle1">Hi! I'm Pavan Kishan. On my channel, you will find many kind of videos. I love traveling and sharing my experiences with all of you.</span></p>
+
+                <div class="text-end">
+                <asp:Label Text="" ID="lblUserInfo" runat="server" />
+                    <asp:Button Text="Logout" ID="btnlogout" CssClass="btn btn-primary" runat="server" Height="35px" Width="83px" OnClick="btnlogout_Click" />
+                </div>
                 <hr />
                 <asp:Menu runat="server" Orientation="Horizontal" CssClass="newStyle2" BackColor="#0066FF" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" ForeColor="White" StaticSubMenuIndent="10px">
                     <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
                     <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px" />
                     <DynamicMenuStyle BackColor="#B5C7DE" />
                     <DynamicSelectedStyle BackColor="#507CD1" />
-                   <Items>
-                       <asp:MenuItem Text="Home" NavigateUrl="~/HomePage.aspx" />
-                       <asp:MenuItem Text="Youtube" NavigateUrl="~/Youtube.aspx"/>
-                       <asp:MenuItem Text="List Form" NavigateUrl="~/WebForm1.aspx"/>
-                       <asp:MenuItem Text="Database App" NavigateUrl="~/ProductApp.aspx" />
-                       <asp:MenuItem Text="Validations" NavigateUrl="~/Validations.aspx"/>
-                       <asp:MenuItem Text="State Management" NavigateUrl="~/StateManagement.aspx">
-                           <asp:MenuItem Text="MainPage" NavigateUrl="~/InputPage.aspx"/>
-                           <asp:MenuItem Text="Recipiant Page" NavigateUrl="~/RecipientPage.aspx"/>
-                           <asp:MenuItem Text="Shopping Cart" NavigateUrl="~/Shopping Cart.aspx"/>
-                       </asp:MenuItem>
-                       <asp:MenuItem Text="Caching" />
-                       <asp:MenuItem Text="Login Controls" />
-                       <asp:MenuItem Text="About Us" />
-                       <asp:MenuItem Text="Location" />
-                       
-                   </Items>
-                           
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/HomePage.aspx" />
+                        <asp:MenuItem Text="Youtube" NavigateUrl="~/Youtube.aspx" />
+                        <asp:MenuItem Text="List Form" NavigateUrl="~/WebForm1.aspx" />
+                        <asp:MenuItem Text="Database App" NavigateUrl="~/ProductApp.aspx" />
+                        <asp:MenuItem Text="Validations" NavigateUrl="~/Validations.aspx" />
+                        <asp:MenuItem Text="State Management" NavigateUrl="~/StateManagement.aspx">
+                            <asp:MenuItem Text="MainPage" NavigateUrl="~/InputPage.aspx" />
+                            <asp:MenuItem Text="Recipiant Page" NavigateUrl="~/RecipientPage.aspx" />
+                            <asp:MenuItem Text="Shopping Cart" NavigateUrl="~/Shopping Cart.aspx" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Billing" NavigateUrl="~/Billing Page.aspx" />
+                        <asp:MenuItem Text="Caching" NavigateUrl="~/Caching.aspx">
+                            <asp:MenuItem Text="Database Caching" NavigateUrl="~/DataCaching.aspx" />
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Login Controls" />
+                        <asp:MenuItem Text="Location" />
+                        
 
-                      
+                    </Items>
+
+
+
                     <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                     <StaticSelectedStyle BackColor="#507CD1" />
-                           
 
-                      
-               </asp:Menu> 
-               <%--<div>
-                                <asp:DropDownList CssClass="form-control" ID="dpQuantity" runat="server">
-                                    <asp:ListItem Selected="True">Black</asp:ListItem>
-                                    <asp:ListItem>Cool</asp:ListItem>
-                                    <asp:ListItem>Hot</asp:ListItem>
-                                </asp:DropDownList>
 
-                </div>--%>
+
+                </asp:Menu>
                 <hr />
+                
+                
             </div>
 
             <div class="row">
-                <div class="col-8">
+                <div class="col-md-9">
                     <asp:ContentPlaceHolder runat="server" ID="mainContent">
                     </asp:ContentPlaceHolder>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="container-fluid">
-                        <div class="row" style="margin:20px">
-                            <asp:AdRotator Width="110%" Height="150px" AdvertisementFile="~/Ads.xml" runat="server" />
+                        <div class="row" style="margin: 10px">
+                            <asp:AdRotator Width="100%" Height="180px" CellPadding="1" AdvertisementFile="~/Ads.xml" runat="server" />
                         </div>
                         <div class="row">
-                            <asp:Calendar runat="server" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px" >
+                            <asp:Calendar runat="server" Style="margin: 20px" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399" Height="200px" Width="220px">
                                 <DayHeaderStyle BackColor="#FF33CC" ForeColor="Black" Height="1px" />
                                 <NextPrevStyle Font-Size="8pt" ForeColor="#FF6699" />
                                 <OtherMonthDayStyle ForeColor="Black" />

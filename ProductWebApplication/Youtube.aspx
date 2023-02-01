@@ -2,10 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContent" runat="server">
 
         <h1>Pavan Kishan Youtube</h1>
-        <p>The following video provides an introduction to Pavan Kishan Youtube Channel</p>
-        <iframe width="720" 
+        <p style="text-align:center">The following video provides an introduction to Pavan Kishan Youtube Channel</p>
+    <div>    
+    <iframe style="Border:solid White; border-width:4px; padding:10px"
+        width="720" 
                 height="360" 
                 src="https://www.youtube.com/embed/lbbQ3jDEiU0" 
                 ></iframe>
-
+    </div>
 </asp:Content>

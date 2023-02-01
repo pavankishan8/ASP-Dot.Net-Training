@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContent" runat="server">
      <style>
         .item{
-            border:2px solid blue;
+            border:2px solid White;
         }
     </style>
     
@@ -17,7 +17,7 @@
         </HeaderTemplate>
         <ItemTemplate>
             <div class="row item">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <asp:Image ImageUrl=<%#Eval("Image")%> runat="server" height="200" Width="200" padding="25px"/>
                     <p>Price: <%#Eval("Price") %></p>
                     <p>

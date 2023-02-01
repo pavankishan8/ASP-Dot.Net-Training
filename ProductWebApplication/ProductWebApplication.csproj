@@ -70,6 +70,8 @@
     <Content Include="Ads.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Billing Page.aspx" />
+    <Content Include="Caching.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -88,6 +90,8 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="CustomControls\Server.ascx" />
+    <Content Include="DataCaching.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\background.jpg" />
@@ -98,6 +102,7 @@
     <Content Include="Images\Coffee.jpg" />
     <Content Include="Images\ColdCoffee.jfif" />
     <Content Include="Images\download.jfif" />
+    <Content Include="Images\Hospital.jpg" />
     <Content Include="Images\Iced Coffee.jpg" />
     <Content Include="Images\images.jfif" />
     <Content Include="Images\Kulfi.jpg" />
@@ -108,12 +113,14 @@
     <Content Include="Images\Nachos.jpg" />
     <Content Include="Images\Pav Bhaji.jpg" />
     <Content Include="Images\Pavan.jpg" />
+    <Content Include="Images\PavanR.jpg" />
     <Content Include="Images\Sandwich.jpg" />
     <Content Include="Images\Starmark.png" />
     <Content Include="Images\Tea.jpg" />
     <Content Include="Images\w3schools.png" />
     <Content Include="Images\Zavarka.jpg" />
     <Content Include="InputPage.aspx" />
+    <Content Include="MyCache.txt" />
     <Content Include="ProductApp.aspx" />
     <Content Include="RecipientPage.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -124,6 +131,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="HomePage.aspx" />
     <Content Include="PageLifeCycle.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Youtube.aspx" />
     <None Include="Scripts\jquery-3.6.3.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.3.js" />
@@ -137,6 +145,34 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Billing Page.aspx.cs">
+      <DependentUpon>Billing Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Billing Page.aspx.designer.cs">
+      <DependentUpon>Billing Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Caching.aspx.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching.aspx.designer.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Server.ascx.cs">
+      <DependentUpon>Server.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Server.ascx.designer.cs">
+      <DependentUpon>Server.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCaching.aspx.cs">
+      <DependentUpon>DataCaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCaching.aspx.designer.cs">
+      <DependentUpon>DataCaching.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,6 +247,13 @@
     </Compile>
     <Compile Include="PageLifeCycle.aspx.designer.cs">
       <DependentUpon>PageLifeCycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Youtube.aspx.cs">
       <DependentUpon>Youtube.aspx</DependentUpon>

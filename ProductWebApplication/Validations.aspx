@@ -14,12 +14,13 @@
     </script>
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-md-9" style="border:solid; border-color:white; padding:10px">
                 <h2 class="h1">
             Employee Validation Page
         </h2>
         <hr />
         <div>
+
             <p>
              Enter the Employee Name: 
                 <asp:textbox runat="server" ID="txtName" />
@@ -48,7 +49,7 @@
                 <asp:rangevalidator errormessage="Experience should be b/w 3 to 10 years" controltovalidate="txtExperience" runat="server" MaximumValue="10" MinimumValue="3" Type="Integer" />
             </p>
             <p>
-                <asp:button text="Submit" runat="server" ID="btnSubmit" OnClick="btnSubmit_Click"/>
+                <asp:button text="Submit" runat="server" ID="btnSubmit" CssClass="btn btn-success" Width="595px" OnClick="btnSubmit_Click"/>
             </p>
             </div>
         </div>

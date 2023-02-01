@@ -10,51 +10,42 @@
 namespace ProductWebApplication {
     
     
-    public partial class Mainsheet {
+    public partial class Caching {
         
         /// <summary>
-        /// form1 control.
+        /// lblTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblTime;
         
         /// <summary>
-        /// lblUserInfo control.
+        /// dpCities control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUserInfo;
+        protected global::System.Web.UI.WebControls.DropDownList dpCities;
         
         /// <summary>
-        /// btnlogout control.
+        /// btnTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
+        protected global::System.Web.UI.WebControls.Button btnTime;
         
         /// <summary>
-        /// mainContent control.
+        /// lblClock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder mainContent;
-        
-        /// <summary>
-        /// lblYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblYear;
+        protected global::System.Web.UI.WebControls.Label lblClock;
     }
 }
