@@ -1,0 +1,69 @@
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\MVC App.dll.config
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\MVC App.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\MVC App.pdb
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csc.exe
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csc.exe.config
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csc.rsp
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csi.exe
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csi.exe.config
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\csi.rsp
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.AppContext.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Collections.Immutable.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Console.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.IO.Compression.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.IO.FileSystem.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.IO.Pipes.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Reflection.Metadata.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.AccessControl.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Claims.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.ValueTuple.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Xml.XPath.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\vbc.exe
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\vbc.exe.config
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\vbc.rsp
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\VBCSCompiler.exe
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\roslyn\VBCSCompiler.exe.config
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\Microsoft.Web.Infrastructure.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Helpers.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Mvc.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Razor.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.Deployment.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.Razor.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Razor.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.Deployment.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Webpages.Razor.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Helpers.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\System.Web.Mvc.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\obj\Debug\MVC App.csprojAssemblyReference.cache
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\obj\Debug\MVC App.csproj.CoreCompileInputs.cache
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\obj\Debug\MVC App.csproj.CopyComplete
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\obj\Debug\MVC App.dll
+D:\Starmark-Pavan R\ASP DotNet\MVC App\MVC App\obj\Debug\MVC App.pdb
