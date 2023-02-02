@@ -1,0 +1,54 @@
+﻿@model MVC_App.DataComponents.Car
+
+@{
+    ViewBag.Title = "AddCar";
+}
+
+<h2>Add New Car</h2>
+<hr />
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm())
+        {
+            <div class="col-md-8">
+                <div>
+                    Enter the Brand Name: @Html.EditorFor((m) => m.BrandName, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div>
+                    Enter the Model Name: @Html.EditorFor((m) => m.Model, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div>
+                    Body Type: @Html.DropDownListFor((m) => m.BodyType, new List<SelectListItem>
+    {
+        new SelectListItem{ Text = "Hatchback"},
+        new SelectListItem{ Text = "Sedan"},
+        new SelectListItem{ Text = "SUV"},
+        new SelectListItem{ Text = "MUV"}
+    }, new { @class = "form-control" })
+                </div>
+                <div>
+                    Engine: @Html.EditorFor(m => m.Engine, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div>
+                    No of Seats: @Html.EditorFor(m => m.Capacity, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div>
+                    Fuel Type: @Html.DropDownListFor((m) => m.FuelType, new List<SelectListItem>
+               {
+                   new SelectListItem{ Text = "Petrol"},
+                   new SelectListItem{ Text = "Diesel"},
+                   new SelectListItem{ Text = "Hybrid"},
+                   new SelectListItem{ Text = "Electric"}
+               }, new { @class = "form-control" })
+                </div>
+                <div>
+                    Car Price: @Html.EditorFor(m => m.Price, new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success">Add New Car</button>
+                </div>
+            </div>
+        }
+    </div>
+    </div>
+

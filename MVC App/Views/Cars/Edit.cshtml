@@ -1,0 +1,61 @@
+﻿@model MVC_App.DataComponents.Car
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color:red">
+        @ViewBag.Message
+    </p>
+}
+
+else
+{
+    <h2>Details of @Model.Model</h2>
+    <hr />
+    using (Html.BeginForm())
+    {<table cellspacing="20" cellpadding="10">
+    <tr>
+        <td>Car Id</td>
+        <td>@Html.EditorFor(m => m.EntryID, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Brand</td>
+        <td>@Html.EditorFor(m => m.BrandName, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Model</td>
+        <td>@Html.EditorFor(m => m.Model, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Body Type</td>
+        <td>@Html.EditorFor(m => m.BodyType, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Engine</td>
+        <td>@Html.EditorFor(m => m.Engine, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Seats</td>
+        <td>@Html.EditorFor(m => m.Capacity, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>Fuel Type</td>
+        <td>@Html.EditorFor(m => m.FuelType, new { @class = "form-control" })</td>
+    </tr>
+    <tr>
+        <td>On-Road Price</td>
+        <td>@Html.EditorFor(m => m.Price, new { @class = "form-control" })</td>
+    </tr>
+
+</table>
+        <div>
+            <button type="submit" class="btn btn-warning">Modify Details</button>
+        </div>
+    
+    }
+
+}
+
