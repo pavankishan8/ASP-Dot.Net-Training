@@ -1,0 +1,25 @@
+﻿@model EmployeeLib.DataClasses.Employee
+
+@{
+    ViewBag.Title = "Index";
+    var options = new AjaxOptions
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "content1"
+    };
+}
+
+
+<h2>Starmark Employee Management App</h2>
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default">
+            <button class="btn btn-default">@Ajax.ActionLink("All Employees", "AllEmployees",null, options, new { @class="btn btn-primary"})</button>
+            <button class="btn btn-default">@Ajax.ActionLink("Add New Employee", "AddNew", null, options, new { @class = "btn btn-warning" })</button>
+        </nav>
+    </div>
+    <div class="row" id="content1" >
+
+    </div>
+</div>
