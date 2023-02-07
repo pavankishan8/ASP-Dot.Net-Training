@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using EmployeeApp.Models;
 using EmployeeLib.DataClasses;
 
 namespace EmployeeApp.Controllers
@@ -23,33 +24,52 @@ namespace EmployeeApp.Controllers
         }
         public ActionResult AddNew()
         {
-            return PartialView(new Employee());
+            return PartialView(new EmployeeVM());
         }
 
         [HttpPost]
-        public ActionResult AddNew(Employee model)
+        public ActionResult AddNew(EmployeeVM model, string AllDep)
         {
-            _repo.AddNewEmployee(model);
-            return RedirectToAction("Index");
+
+            if (ModelState.IsValid)
+            {
+                model.DeptId = int.Parse(AllDep);
+                var emp = new Employee
+                {
+                    EmpName = model.EmpName,
+                    Address = model.EmpAddress,
+                    Salary = model.EmpSalary,
+                    DeptId = model.DeptId
+                };
+
+                _repo.AddNewEmployee(emp);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return PartialView(model);
+            }
         }
 
-        public ActionResult Update()
+        public ActionResult Update(string id)
         {
-            return PartialView(new Employee());
+           var selected = _repo.find(int.Parse(id));
+            return PartialView(selected);
         }
 
         [HttpPost]
-        public ActionResult Update(Employee model)
+        public ActionResult Update(Employee model,string AllDep)
         {
+            model.DeptId = int.Parse(AllDep);
             _repo.UpdateEmployee(model);
             return RedirectToAction("Index");
         }
 
-        public ActionResult Delete(string id)
+        public ActionResult Del(string id)
         {
             var id1 = int.Parse(id);
             _repo.DeleteEmployee(id1);
-            return RedirectToAction("Index");
+            return RedirectToAction("AllEmployees");
         }
     }
 }
