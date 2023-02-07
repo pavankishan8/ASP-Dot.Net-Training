@@ -9,7 +9,8 @@
 }
 
 <div>
-    <table>
+    <h3 class="text-secondary" style="text-align:center">List of Employees</h3>
+    <table class="table table-bordered">
         <tr>
             <th>ID</th>
             <th>Employee Name</th>
@@ -26,8 +27,11 @@
                 <td>@item.Address</td>
                 <td>@item.Salary</td>
                 <td>@item.DeptId</td>
-                <td>@Ajax.ActionLink("Edit", "Update", null, options, new { @class = "btn btn-warning" })</td>
-            </tr>
-        }
+                <td>
+                    @Ajax.ActionLink("Edit", "Update", new { id = item.EmpId }, options, new { @class = "btn btn-success" })
+                @Ajax.ActionLink("Delete", "Del", new { id = item.EmpId }, options, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
     </table>
 </div>

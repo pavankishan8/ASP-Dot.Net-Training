@@ -10,13 +10,14 @@
 }
 
 
-<h2>Starmark Employee Management App</h2>
+<h2>Employee Management</h2>
 
 <div class="container">
     <div class="row">
-        <nav class="navbar navbar-default">
-            <button class="btn btn-default">@Ajax.ActionLink("All Employees", "AllEmployees",null, options, new { @class="btn btn-primary"})</button>
-            <button class="btn btn-default">@Ajax.ActionLink("Add New Employee", "AddNew", null, options, new { @class = "btn btn-warning" })</button>
+        <nav class="navbar navbar-brand">
+            <button class="btn btn-default">@Ajax.ActionLink("All Employees", "AllEmployees", null, options, new { @class = "btn btn-primary" })</button>
+            <button class="btn btn-default">@Ajax.ActionLink("Add New Employee", "AddNew", null, options, new { @class = "btn btn-success" })</button>
+            <button class="btn btn-default">@Ajax.ActionLink("Management", "AddNew", null, options, new { @class = "btn btn-warning" })</button>
         </nav>
     </div>
     <div class="row" id="content1" >
