@@ -10,6 +10,7 @@ namespace EmployeeLib.DataClasses
     {
         private Entities _context = new Entities();
         public void AddNewEmployee(Employee emp)
+
         {
             _context.Employees.Add(emp);
             _context.SaveChanges();
@@ -38,6 +39,8 @@ namespace EmployeeLib.DataClasses
             return _context.Employees.ToList();
         }
 
+        public Employee find(int id) => _context.Employees.FirstOrDefault((p) => p.EmpId == id);
+
         public void UpdateEmployee(Employee emp)
         {
             var rec = _context.Employees.FirstOrDefault((e) => e.EmpId == emp.EmpId);
@@ -47,6 +50,7 @@ namespace EmployeeLib.DataClasses
                 rec.DeptId = emp.DeptId;
                 rec.EmpName = emp.EmpName;
                 rec.Salary = emp.Salary;
+                _context.SaveChanges();
             }
             else
             {
