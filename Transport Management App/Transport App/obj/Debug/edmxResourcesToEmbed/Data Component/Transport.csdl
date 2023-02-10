@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EmpRoute">
+    <Key>
+      <PropertyRef Name="EntryID" />
+    </Key>
+    <Property Name="EntryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="PickUpID" Type="Int32" />
+    <Property Name="DropID" Type="Int32" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PickUpTable" Relationship="Self.FK__EmpRoute__DropID__2B0A656D" FromRole="EmpRoute" ToRole="PickUpTable" />
+    <NavigationProperty Name="EmpTable" Relationship="Self.FK__EmpRoute__EmpID__29221CFB" FromRole="EmpRoute" ToRole="EmpTable" />
+    <NavigationProperty Name="PickUpTable1" Relationship="Self.FK__EmpRoute__PickUp__2A164134" FromRole="EmpRoute" ToRole="PickUpTable" />
+  </EntityType>
+  <EntityType Name="EmpTable">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmpAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmpBaseLocation" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="EmpRoutes" Relationship="Self.FK__EmpRoute__EmpID__29221CFB" FromRole="EmpTable" ToRole="EmpRoute" />
+  </EntityType>
+  <EntityType Name="PickUpTable">
+    <Key>
+      <PropertyRef Name="EntryID" />
+    </Key>
+    <Property Name="EntryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PickUpPoint" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RouteNo" Type="Int32" />
+    <NavigationProperty Name="EmpRoutes" Relationship="Self.FK__EmpRoute__DropID__2B0A656D" FromRole="PickUpTable" ToRole="EmpRoute" />
+    <NavigationProperty Name="EmpRoutes1" Relationship="Self.FK__EmpRoute__PickUp__2A164134" FromRole="PickUpTable" ToRole="EmpRoute" />
+    <NavigationProperty Name="RouteTable" Relationship="Self.FK__PickUpTab__Route__2645B050" FromRole="PickUpTable" ToRole="RouteTable" />
+  </EntityType>
+  <EntityType Name="RouteTable">
+    <Key>
+      <PropertyRef Name="RouteNo" />
+    </Key>
+    <Property Name="RouteNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RouteName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FinalPrice" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PickUpTables" Relationship="Self.FK__PickUpTab__Route__2645B050" FromRole="RouteTable" ToRole="PickUpTable" />
+    <Property Name="RouteImage" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__EmpRoute__DropID__2B0A656D">
+    <End Role="PickUpTable" Type="Self.PickUpTable" Multiplicity="0..1" />
+    <End Role="EmpRoute" Type="Self.EmpRoute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickUpTable">
+        <PropertyRef Name="EntryID" />
+      </Principal>
+      <Dependent Role="EmpRoute">
+        <PropertyRef Name="DropID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmpRoute__EmpID__29221CFB">
+    <End Role="EmpTable" Type="Self.EmpTable" Multiplicity="0..1" />
+    <End Role="EmpRoute" Type="Self.EmpRoute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpTable">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="EmpRoute">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmpRoute__PickUp__2A164134">
+    <End Role="PickUpTable" Type="Self.PickUpTable" Multiplicity="0..1" />
+    <End Role="EmpRoute" Type="Self.EmpRoute" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PickUpTable">
+        <PropertyRef Name="EntryID" />
+      </Principal>
+      <Dependent Role="EmpRoute">
+        <PropertyRef Name="PickUpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PickUpTab__Route__2645B050">
+    <End Role="RouteTable" Type="Self.RouteTable" Multiplicity="0..1" />
+    <End Role="PickUpTable" Type="Self.PickUpTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RouteTable">
+        <PropertyRef Name="RouteNo" />
+      </Principal>
+      <Dependent Role="PickUpTable">
+        <PropertyRef Name="RouteNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TransportEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EmpRoutes" EntityType="Self.EmpRoute" />
+    <EntitySet Name="EmpTables" EntityType="Self.EmpTable" />
+    <EntitySet Name="PickUpTables" EntityType="Self.PickUpTable" />
+    <EntitySet Name="RouteTables" EntityType="Self.RouteTable" />
+    <AssociationSet Name="FK__EmpRoute__DropID__2B0A656D" Association="Self.FK__EmpRoute__DropID__2B0A656D">
+      <End Role="PickUpTable" EntitySet="PickUpTables" />
+      <End Role="EmpRoute" EntitySet="EmpRoutes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmpRoute__EmpID__29221CFB" Association="Self.FK__EmpRoute__EmpID__29221CFB">
+      <End Role="EmpTable" EntitySet="EmpTables" />
+      <End Role="EmpRoute" EntitySet="EmpRoutes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmpRoute__PickUp__2A164134" Association="Self.FK__EmpRoute__PickUp__2A164134">
+      <End Role="PickUpTable" EntitySet="PickUpTables" />
+      <End Role="EmpRoute" EntitySet="EmpRoutes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PickUpTab__Route__2645B050" Association="Self.FK__PickUpTab__Route__2645B050">
+      <End Role="RouteTable" EntitySet="RouteTables" />
+      <End Role="PickUpTable" EntitySet="PickUpTables" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

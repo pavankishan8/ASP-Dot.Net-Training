@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="TransportEntities">
+    <EntitySetMapping Name="EmpRoutes">
+      <EntityTypeMapping TypeName="Model.EmpRoute">
+        <MappingFragment StoreEntitySet="EmpRoute">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="PickUpID" ColumnName="PickUpID" />
+          <ScalarProperty Name="DropID" ColumnName="DropID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpTables">
+      <EntityTypeMapping TypeName="Model.EmpTable">
+        <MappingFragment StoreEntitySet="EmpTable">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="EmpAddress" ColumnName="EmpAddress" />
+          <ScalarProperty Name="EmpBaseLocation" ColumnName="EmpBaseLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PickUpTables">
+      <EntityTypeMapping TypeName="Model.PickUpTable">
+        <MappingFragment StoreEntitySet="PickUpTable">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="PickUpPoint" ColumnName="PickUpPoint" />
+          <ScalarProperty Name="RouteNo" ColumnName="RouteNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RouteTables">
+      <EntityTypeMapping TypeName="Model.RouteTable">
+        <MappingFragment StoreEntitySet="RouteTable">
+          <ScalarProperty Name="RouteImage" ColumnName="RouteImage" />
+          <ScalarProperty Name="RouteNo" ColumnName="RouteNo" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="FinalPrice" ColumnName="FinalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
