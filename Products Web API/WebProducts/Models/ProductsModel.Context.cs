@@ -26,5 +26,8 @@ namespace WebProducts.Models
         }
     
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Dept> Depts { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
     }
 }

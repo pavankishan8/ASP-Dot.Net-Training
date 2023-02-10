@@ -12,12 +12,12 @@ namespace WebProducts.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class Customer
     {
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string ProductImage { get; set; }
-        public int Price { get; set; }
-        public int Quantity { get; set; }
+        public int CstId { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerEmail { get; set; }
+        public string CustomerMobile { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -12,5 +12,54 @@
   </EntityType>
   <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Depts" EntityType="Model.Dept" />
+    <EntitySet Name="Employees" EntityType="Model.Employee" />
+    <AssociationSet Name="FK__Employee__DeptId__1DB06A4F" Association="Model.FK__Employee__DeptId__1DB06A4F">
+      <End Role="Dept" EntitySet="Depts" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <EntitySet Name="Customers" EntityType="Model.Customer" />
   </EntityContainer>
+  <EntityType Name="Dept">
+    <Key>
+      <PropertyRef Name="DeptId" />
+    </Key>
+    <Property Name="DeptId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeptName" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employees" Relationship="Model.FK__Employee__DeptId__1DB06A4F" FromRole="Dept" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpName" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Salary" Type="Int32" Nullable="false" />
+    <Property Name="DeptId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Dept" Relationship="Model.FK__Employee__DeptId__1DB06A4F" FromRole="Employee" ToRole="Dept" />
+  </EntityType>
+  <Association Name="FK__Employee__DeptId__1DB06A4F">
+    <End Type="Model.Dept" Role="Dept" Multiplicity="1" />
+    <End Type="Model.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dept">
+        <PropertyRef Name="DeptId" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="DeptId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CstId" />
+    </Key>
+    <Property Name="CstId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerEmail" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerMobile" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>
