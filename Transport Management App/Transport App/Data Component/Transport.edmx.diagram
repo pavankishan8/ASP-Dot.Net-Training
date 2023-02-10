@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="befbca1de015448881200e2464f9bfe3" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.EmpRoute" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.EmpTable" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PickUpTable" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RouteTable" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__EmpRoute__DropID__2B0A656D" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__EmpRoute__EmpID__29221CFB" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__EmpRoute__PickUp__2A164134" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__PickUpTab__Route__2645B050" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
